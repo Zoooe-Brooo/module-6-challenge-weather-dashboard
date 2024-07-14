@@ -1,4 +1,4 @@
-# module-6-challenge-weather-dashboard
+# Weather Dashboard (Module 6 Challenge)
 
 ## Description
   A weather dashboard application runs in the browser.
