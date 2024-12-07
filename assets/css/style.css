@@ -3,10 +3,11 @@ body {
     background-color: #ffffff;
     margin: 0;
     padding: 0;
+    color: #040404cb;
 }
 
 header {
-    background-color: #22328d;
+    background-color: #89b9ef;
     color: white;
     padding: 5px;
     text-align: center;
@@ -40,7 +41,7 @@ img {
 #search-button {
     width: 100%;
     padding: 10px;
-    background-color: #698cee;
+    background-color: #89b9ef;
     color: white;
     border: none;
     cursor: pointer;
@@ -67,7 +68,7 @@ img {
 #current-weather {
     padding: 20px;
     margin-bottom: 20px;
-    border: 1px solid #040404;
+    border: 1px solid #040404cb;
 }
 
 #forecast {
@@ -76,7 +77,7 @@ img {
 }
 
 .forecast-card {
-    background-color: #8a88b6;
+    background-color: #89b9ef;
     color: white;
     padding: 10px;
     margin: 5px;

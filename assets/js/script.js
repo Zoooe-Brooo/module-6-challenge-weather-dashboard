@@ -88,7 +88,8 @@ function fetchForcast(lat, lon) {
 function displayWeather(data) {
   const iconURL = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
   currentCity.innerHTML = `${data.name} (${new Date(data.dt * 1000).toLocaleDateString()}) <img src="${iconURL}" alt="Weather icon">`;
-  currentTemp.textContent = `Temp: ${data.main.temp} °F`;
+  const tempCelsius = (data.main.temp - 273.15).toFixed(2);
+  currentTemp.textContent = `Temp: ${tempCelsius} °C`;
   currentWind.textContent = `Wind: ${data.wind.speed} MPH`;
   currentHumidity.textContent = `Humidity: ${data.main.humidity} %`;
 
@@ -108,7 +109,8 @@ function displayForecast(forecast) {
   iconEl.alt = "Weather icon";
 
   const tempEl = document.createElement('p');
-  tempEl.textContent = `Temp: ${forecast.main.temp} °F`;
+  const tempCelsius = (forecast.main.temp - 273.15).toFixed(2);
+  tempEl.textContent = `Temp: ${tempCelsius} °C`;
 
   const windEl = document.createElement('p');
   windEl.textContent = `Wind: ${forecast.wind.speed} MPH`;
